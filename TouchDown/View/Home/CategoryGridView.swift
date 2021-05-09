@@ -17,8 +17,10 @@ struct CategoryGridView: View {
                 Section(header: SectionView(rotateClockwise: false), footer: SectionView(rotateClockwise: true)) {
                     ForEach(categories) { category in
                         CategoryItemView(category: category)
-                    }
-                } //: LOOP
+                    } //: LOOP
+                } //: SECTION
+                .font(.system(size: 12))
+                .foregroundColor(.white)
             }) //: LAZYHGRID
             .frame(height: 140)
             .padding(.horizontal, 15)

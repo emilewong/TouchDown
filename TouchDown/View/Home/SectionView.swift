@@ -16,9 +16,9 @@ struct SectionView: View {
         VStack(spacing: 0){
             Spacer()
             
-            Text("Categories".uppercased())
-                .font(.footnote)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            Text("Category".uppercased())
+                .font(.caption2)
+                .fontWeight(.ultraLight)
                 .foregroundColor(.white)
                 .rotationEffect(Angle(degrees: rotateClockwise ? 90 : -90))
             
